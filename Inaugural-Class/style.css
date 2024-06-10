@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos Gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 200px;
+}
+
+main {
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding-top: 100px; /* Espaço para o header fixo */
+  width: 100%;
+}
+
+form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  position: sticky;
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.subtitle {
+  margin-left: -13%;
+  font-weight: normal;
+  font-size: medium;
+  margin-top: 5px;
+}
+
+hr {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #FF0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #cc0000;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 600px) {
+  header, main {
+      padding: 20px;
+  }
+  h1 {
+      font-size: 20px;
+  }
+  h2 {
+      font-size: 18px;
+  }
+}
